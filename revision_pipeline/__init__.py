@@ -1,0 +1,1 @@
+"""Revision-v2 controlled pipeline: paths, split manifests, audits, aggregation."""

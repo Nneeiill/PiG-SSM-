@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+outputs/
+results/
+data/
+*.csv
+*.jsonl
+*.joblib
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
