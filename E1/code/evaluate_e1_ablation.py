@@ -27,7 +27,7 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from e1_ablation_train import StressPredictorMambaGateAblation
 from pig_ssm_model import StressPredictorMamba
-from revision_pipeline.paths import resolve_project_root
+from pipeline.paths import resolve_project_root
 from train_pig_ssm import (
     StrainStressEvalDataset,
     dump_json,

@@ -53,13 +53,13 @@ if str(SCRIPT_DIR) not in sys.path:
 from pig_ssm_model import StressPredictorMamba, count_parameters
 
 try:
-    from revision_pipeline.paths import resolve_project_root
-    from revision_pipeline.json_utils import dump_json
-    from revision_pipeline.provenance import runtime_provenance, utc_now_iso
+    from pipeline.paths import resolve_project_root
+    from pipeline.json_utils import dump_json
+    from pipeline.provenance import runtime_provenance, utc_now_iso
 except ImportError:  # imported as organized_pig_ssm.train_pig_ssm from the project root
-    from organized_pig_ssm.revision_pipeline.paths import resolve_project_root
-    from organized_pig_ssm.revision_pipeline.json_utils import dump_json
-    from organized_pig_ssm.revision_pipeline.provenance import runtime_provenance, utc_now_iso
+    from organized_pig_ssm.pipeline.paths import resolve_project_root
+    from organized_pig_ssm.pipeline.json_utils import dump_json
+    from organized_pig_ssm.pipeline.provenance import runtime_provenance, utc_now_iso
 
 
 class StrainStressDataset(Dataset):

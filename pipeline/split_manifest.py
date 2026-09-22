@@ -254,7 +254,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.project_root is None:
-        from revision_pipeline.paths import resolve_project_root
+        from pipeline.paths import resolve_project_root
 
         project_root = resolve_project_root()
     else:

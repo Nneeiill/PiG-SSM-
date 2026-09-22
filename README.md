@@ -27,7 +27,7 @@ python -m pip install torch numpy scikit-learn joblib
 Generate a deterministic 70/10/20 manifest (replace `42` with `123` or `2026` for the other paper seeds):
 
 ```bash
-python -m revision_pipeline.split_manifest \
+python -m pipeline.split_manifest \
   --dataset alloy-1 --seed 42 \
   --output outputs/manifests/alloy-1_seed42.json
 ```
